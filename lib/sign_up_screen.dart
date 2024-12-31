@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/animated_progress_indicator.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -63,7 +64,7 @@ class _SignUpFormState extends State<SignUpForm> {
       onChanged: _updateFormProgress,
       child: Column(
         children: [
-          LinearProgressIndicator(
+          AnimatedProgressIndicator(
             value: _formProgress,
           ),
           Text(
